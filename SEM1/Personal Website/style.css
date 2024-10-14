@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+/*___________________ HEADER ________________*/
+header nav ul li a{
+    text-decoration: none;
+    color: orange;
+
+}
+
+
+/*___________________ FOOTER _______________*/
+footer{
+    display: block;
+    height: 70px;
+}
+footer section{
+    width: 33.33333333333333333333333333333333%;
+    float: left;
+}
+footer .left{
+    background-color: #d0ad92;
+    height: 100%;
+}
+
+footer .mid{
+    background-color: bisque;
+    height: 100%;
+}
+footer .right{
+    float: right;
+    background-color: burlywood;
+    height: 100%;
+}
