@@ -1,0 +1,16 @@
+*{
+    background-color: rebeccapurple;
+}
+body{
+    margin: 0px;
+}
+h1:hover{
+    color: blue;
+
+}
+h1{
+    color: orange;
+}
+h1.cursus-css{
+    color: burlywood;
+}
