@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; /*Margin auto left&right zorgt dat pagina in midden komt*/
+}
+
+body>section > header {
+    height: 200px;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body>section > header > h1{
+    color: white;
+    margin:10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section > nav, section >nav a{
+    background-color: #575757;
+    color: lawngreen;
+    text-decoration: none;
+}
+
+article{
+    margin:5px;
+    padding: 5px;
+    background-color: #eeeeee;
+}

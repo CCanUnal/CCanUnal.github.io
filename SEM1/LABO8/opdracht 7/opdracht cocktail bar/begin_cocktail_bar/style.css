@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+
+    width: 95%;
+    font: 1.2 em Verdana, helvetica, arial, sans-serif;
+}
+header img{
+    display: block; /*img is inline, dus converteren naar block*/
+    margin-left: auto;
+    margin-right: auto;
+}
+article {
+}
+#weekly{
+    border: 1px solid cadetblue;
+    text-align: center;
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#guarantee{
+    margin-top: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: dashed 1px white;
+}
+section{
+    width: 70%;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+h1, h2{
+    color: #007e7e;
+
+}
+h1{
+    font-size: 150%;
+}
+h2{
+    font-size: 130%;
+}
+footer{
+    font-size: 50%;
+    clear: both;
+    bottom: 0;
+}
+article p a:hover{
+    color: brown;
+}

@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box; /* Zorgt ervoor dat padding en borders worden meegenomen in de breedte en hoogte van elementen */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; /* kolommen naast elkaar gezet */
+    gap: 10px; /* Ruimte tussen de kolommen */
+    padding: 10px;
+}
+
+.col {
+    flex: 1; /* Elke kolom krijgt evenveel ruimte */
+    border: 1px solid #000; /* Border rond elke kolom */
+    padding: 10px; /* Binnenruimte binnen elke kolom */
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-top: 0; /* Verwijdert marge boven de titel */
+}

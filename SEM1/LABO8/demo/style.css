@@ -1,0 +1,54 @@
+body{
+    background-color: silver;
+    margin: 0;
+    padding:0;
+}
+#wrapper{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+header img{
+    display: block; /*img is inline, dus converteren naar block*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+nav{
+    background-color: white;
+    float: left;
+    width: 20%;
+    height: 100px;
+}
+section#midden{
+    float: left;
+    background-color: maroon;
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid;
+    box-sizing: border-box;
+}
+footer{
+    background-color: green;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+}
+nav a{
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
+
+section p span{
+    background-color: green;
+}
+.breedte{
+    width: 400px;
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+}
