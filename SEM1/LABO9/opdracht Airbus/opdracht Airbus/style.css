@@ -1,0 +1,10 @@
+#top{
+    text-align: center;
+    color: darkblue;
+}
+div#top > p:first-child{
+    font-size: 300%;
+}
+div#top > p:nth-child(2){
+    font-size: 240%;
+}

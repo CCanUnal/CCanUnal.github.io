@@ -1,0 +1,33 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    font: 1.25em sans-serif;
+}
+article{
+    border: 1px solid blue;
+    padding: 10px;
+    min-height: 280px;
+    margin: 0 10px 10px;
+}
+h2{
+    margin: 0;
+}
+p{
+    line-height: 1.25;
+    margin: 0;
+}
+img{
+    display: inline-block;
+
+}
+article>p{
+    margin: 10px;
+}
+article:nth-child(2n+1) img{
+    float: left;
+    margin:  0 10px 0 0;
+}
+article:nth-child(2n) img{
+    float: right;
+    margin: 0 0 0 10px;
+}
