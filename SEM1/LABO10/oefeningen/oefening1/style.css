@@ -1,0 +1,5 @@
+.row1.col1, .row1.col2, .row1.col3{
+    background-color: red;
+    width: 33%;
+    height: auto;
+}
