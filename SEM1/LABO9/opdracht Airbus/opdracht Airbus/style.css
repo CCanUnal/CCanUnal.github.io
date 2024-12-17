@@ -1,148 +1,112 @@
-body
-{
-
+body{
+    width:95%;
+    margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size:10px;
 }
-#top-title
-{
+
+header{
     text-align: center;
-    color: darkblue;
-    background-image:url("images/bgsky3.jpg");
+    color:darkblue;
+    background-image: url("images/bgsky3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    font-weight: bold;
+    height:200px;
+    position:relative;
 }
 
-div#top-title > p:first-child
-{
+.top {
     font-size: 300%;
+    font-style: italic;
 }
-
-div#top-title > p:nth-child(2)
-{
+.bottom{
     font-size: 240%;
 }
-
-div#top-title > img
-{
-    position: relative;
+header img{
+    position: absolute;
+    bottom: 60px;
+    right: 250px;
 }
-
-div#news
-{
-    width: 25%;
-    background-color: #dddddd ;
-    border: 1px solid #999999;
-    color: #666666;
-    font-size: 90%;
-
+section{
     float:right;
+    width:25%;
+    background-color: #DDDDDD;
+    border:1px solid #999999;
+    box-sizing: border-box;
+    color: #666666;
+    font-size:100%;
 }
-div#news > p
-{
+section p{
     padding: 10px;
 }
-
-div#news > h3
-{
+section h3{
     color: white;
     background-color: blue;
     text-align: center;
-    font-size: 120%;
+    font-size:150%;
 }
-div#main
-{
-    width: 75%;
-
-
+main{
+    width:75%;
 }
-div#main > div#introduction, div#main > div#logo
-{
-    padding-right: 10px;
+p.bottom {
+    background-color:transparent;
+    z-index:20;
 }
-div#introduction
-{
-    background-color: white;
-    color: black;
-
+.vliegtuig{
+    z-index: 0;
 }
-
-div#introduction > p
-{
+.intro{
     margin: 20px 30px 20px 0;
+    overflow: hidden;
 }
-
-div#logo
-{
-    float: left;
-    margin: 10px 20px 10px 20px;
-
+.intro p{
+    margin: 0;
 }
-
-div#introduction > p > span
-{
-    color:blue;
+.intro span{
+    color: blue;
     font-weight: bold;
-    font-style: italic;
 }
-
-div#gallery
-{
-    background-color: #999999;
-    padding-right: 390px;
-
-}
-div#gallery:after
-{
-    content: "";
-    clear: both;
-    display: table;
-
-}
-div.foto
-{
+#logo{
     float: left;
-    padding: 20px 20px 20px 20px;
-
-
+    width: 100px;
+    padding: 20px 20px 0 20px;
+    margin: auto;
 }
-
-div.foto img
-{
-    padding: 10px;
-    background-color: white;
-    margin: 5px;
+.foto{
+    width: 27%;
     border: 1px dashed black;
-    width: 180px;
-    height: 180px;
+}
+.gallerij{
+    float: left;
+    background-color: #999999;
 }
 
-#bottom
-{
+.gallerij > div{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border: 1px dotted #999999;
+}
 
-    display: flex;
-    background-color: #666666;
+.bottom{
+    clear:both;
+    width:100%;
+    background-color:#666666;
     color: white;
     line-height: 2em;
-    padding: 120px;
 }
-
-#block2 ul li a:hover
-{
-    color: red;
+.bottom div{
+    float: left;
+    padding-left:120px;
 }
-
-#copyright
-{
-    width: 100%;
-    text-align: center;
-    color: black;
-    background-color: white;
+.bottom a{
+    color:white;
+    text-decoration: none;
 }
+.bottom a:hover{
+    color:red;
 
-
+}

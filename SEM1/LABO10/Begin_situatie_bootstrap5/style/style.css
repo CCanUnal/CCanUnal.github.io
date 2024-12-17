@@ -1,0 +1,17 @@
+.box {
+    height: 150px;
+    font-size: 24px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background-color: darkgray;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 5px;
+
+}
+.box2, .box5, .box8 {
+    background-color: gray;
+}
