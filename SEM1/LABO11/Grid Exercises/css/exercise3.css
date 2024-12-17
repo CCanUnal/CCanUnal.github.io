@@ -1,0 +1,44 @@
+.container{
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    gap: 5px;
+
+}
+
+.container .block{
+    margin:20px;
+    padding:20px;
+    background-color: white;
+}
+/* Horizontaal */
+.block.block1 {
+    grid-area: 3 / 1 / 4 / 2; /* Linkse blok */
+}
+.block.block2 {
+    grid-area: 3 / 2 / 4 / 3; /* naast 1 */
+}
+.block.block3 {
+    grid-area: 3 / 3 / 4 / 4; /* Midden van kruis */
+}
+.block.block4 {
+    grid-area: 3 / 4 / 4 / 5; /* Rechts van midden */
+}
+.block.block5 {
+    grid-area: 3 / 5 / 4 / 6; /* Rechtse blok */
+}
+
+/* Verticaal */
+.block.block6 {
+    grid-area: 1 / 3 / 2 / 4; /* Bovenste deel */
+}
+.block.block7 {
+    grid-area: 2 / 3 / 3 / 4; /* Boven midden */
+}
+.block.block8 {
+    grid-area: 4 / 3 / 5 / 4; /* Onder midden */
+}
+.block.block9 {
+    grid-area: 5 / 3 / 6 / 4; /* Onderste deel */
+}
