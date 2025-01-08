@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightskyblue;
+    font-family: Chalkboard, sans-serif;
+}
+
+h1 {text-align: center;}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+}
+.border {
+    border: 2px solid black;
+}
+
+.border {border: 2px solid black;}
+
+section{
+    background: coral;
+    height: 500px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+}
+
+.grey-box {
+    background: grey;
+    width: 100px;
+height: 100px;
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 2em;
+
+
+}
