@@ -1,0 +1,109 @@
+/** Volgende CSS gaan we ze geven **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em; /* Vergroting van het lettertype */
+    color: black;
+    border-bottom: 2px solid black; /* Volle zwarte lijn onderaan */
+    margin-bottom: 1em; /* 100% van de font-size van de parent */
+    padding-bottom: 1em; /* 100% van de font-size van de parent */
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*--------------HEADER------------*/
+header{
+    width: 100%;
+
+    border-bottom: #ebe8e8 1px solid ;/*grijze lijn onder*/
+    margin: 0 auto;/*Zorgt dat het header horizontaal gecentreerd is*/
+    text-align: center;/*Afbeelding centreren*/
+}
+
+header img{
+    height: 50px;
+    display: block;/*Gebruikt om afbeelding correct te positioneren*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Headers bij aanpassing hoogte*/
+
+@media only screen and (max-width:999px) {/*Vanaf 770px en kleiner dan 1000*/
+    header{
+        max-width: 750px;
+    }
+}
+@media only screen and (max-width:769px) { /*Kleinscherm (kleiner dan 770px)*/
+    header{
+        max-width: 600px;
+    }
+}
+
+
+/*--------------------- NAVIGATIE --------------*/
+nav ul.navigation {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 gelijke delen */
+    margin: 0 auto; /* Horizontaal centreren */
+    padding: 10px 0; /* Padding boven en onder */
+    width: 100%;
+    max-width: 980px; /* Brede schermen */
+    list-style: none; /* Geen opsommingstekens */
+}
+.navigation li{
+    position: relative;/*Voor de nodige hoverlijn*/
+}
+nav ul li a{
+    display: block;/*Moet om het er goed uit te laten zien*/
+    text-align: center;
+    text-decoration: none;/*Onderlijning weg*/
+    color: #5b4746;
+    font-size: 13px;
+    margin: 0 auto; /*Horizontaal centreren*/
+    padding: 10px 0; /*Boven en onderaan padding*/
+    border-right: #ebe8e8 1px solid; /*Grijze streep*/
+}
+
+/*Bij laatste geen lijn*/
+.navigation li:last-child a {
+    border-right: none;
+}
+
+.navigation li a:hover {
+    border-bottom: 2px solid #fff100; /* Gele hoverlijn */
+}
+
+/*--Bij vergroten of verkleinen scherm--*/
+
+@media only screen and (max-width:769px) { /*Bij kleinscherm (hier als kleiner dan 770px)*/
+    nav.navigation {
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 999px) {/*Tot maximum 999px, hierna is het standaard de bovenstaande code*/
+    nav.navigation {
+        max-width: 750px;
+    }
+}
+/*-------- MAIN(2) -------*/
+hr#top-lijn{
+    width: 100%;
+    height: 1px;
+    color: black;
+}
+/*-----------Main HEADER-----------*/

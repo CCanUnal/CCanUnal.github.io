@@ -1,0 +1,191 @@
+/* Algemene Stijlen - Toepassen op alle elementen */
+* {
+    font-family: Georgia, "Times New Roman", Times, sans-serif; /* Gebruik een serif-lettertype */
+    font-size: 1.2em; /* Zet de standaard tekstgrootte naar 1.2em */
+}
+
+/* ------------------------ NAV (Navigatie) ------------------------ */
+
+/* Stijlen voor de navigatiebalk */
+nav {
+    background-color: #fff8; /* Semi-transparante witte achtergrond voor de navigatie */
+    display: flex; /* Gebruik flexbox voor de indeling van de nav-items */
+    justify-content: flex-end; /* Plaats de navigatie-items aan de rechterkant */
+    align-content: flex-end; /* Zorg ervoor dat de items onderaan de nav komen */
+}
+
+/* Navigatie menu en lijst */
+nav > ul {
+    height: 60px; /* Zet de hoogte van de lijst naar 60px */
+    text-align: center; /* Center de tekst in de lijst */
+}
+
+/* Navigatie items */
+nav > ul > li {
+    display: inline; /* Maak de lijstitems inline zodat ze naast elkaar staan */
+    font-size: 20px; /* Zet de fontgrootte van de navigatie naar 20px */
+    margin: 0 1em 0 1em; /* Voeg een marge van 1em aan de linker- en rechterkant toe */
+    width: 20%; /* Zet de breedte van elk lijstitem op 20% */
+    padding: 10px; /* Voeg padding van 10px rondom de tekst toe */
+}
+
+/* Navigatie links */
+nav > ul > li > a {
+    color: #ce0000; /* Zet de tekstkleur van de links naar een donkerrode kleur */
+}
+
+/* Hover effect voor de navigatie links */
+nav > ul > li > a:hover {
+    color: #ce0000; /* Hover-effect voor de links (blijft dezelfde kleur) */
+    text-decoration: underline; /* Onderstreep de tekst bij hover */
+}
+
+/* Navigatie afbeelding */
+nav > ul > li > a > img {
+    width: 150px; /* Zet de breedte van de afbeelding naar 150px */
+}
+
+/* ------------------------ HEADER ------------------------ */
+
+/* Stijlen voor de header */
+header {
+    background-image: url("../images/pardoes_in_sneeuw.jpg"); /* Achtergrondafbeelding voor de header */
+    background-position: center; /* Zet de achtergrond in het midden */
+    background-size: cover; /* Maak de achtergrondafbeelding volledig bedekkend */
+    height: 300px; /* Zet de hoogte van de header naar 300px */
+}
+
+/* ------------------------ MAIN ------------------------ */
+
+/* Algemeen voor de hoofdinformatie (main) */
+main {
+    display: flex; /* Gebruik flexbox om de kolommen in main te plaatsen */
+    justify-content: space-between; /* Verspreid de kolommen over de beschikbare ruimte */
+    margin-top: 20px; /* Voeg een bovenmarge toe aan main */
+}
+
+/* Kolom 1 (De zijbalk) */
+.kolom1 {
+
+    width: 20%; /* Zet de breedte van kolom1 naar 20% van de pagina */
+    float: left; /* Laat kolom1 aan de linkerzijde zweven */
+    background-color: #e9cda0; /* Geef een lichtbruine achtergrondkleur */
+    font-size: 8px; /* Zet de tekstgrootte naar 8px voor deze kolom */
+    height: 1900px; /* Stel een hoogte van 1900px in voor de kolom */
+}
+
+/* Kolom 1 - Titels en tekst */
+.kolom1 aside > h5 {
+    color: #a00c2a; /* Zet de kleur van de kopjes in de zijbalk naar een dieprode tint */
+}
+
+/* Kolom 2 (De hoofdinformatie) */
+.kolom2 {
+    width: 80%; /* Zet de breedte van kolom2 naar 80% van de pagina */
+    float: right; /* Laat kolom2 aan de rechterzijde zweven */
+}
+
+/* ------------------------ ARTICLE (Hoofdinhoud) ------------------------ */
+
+/* Stijlen voor de hoofdinhoud (artikelen) */
+article > h1 {
+    color: #ce0000; /* Zet de kleur van de hoofdtitel naar donkerrood */
+    font-size: 40px; /* Zet de fontgrootte van de hoofdtitel naar 40px */
+}
+
+article > h2 {
+    color: #ce0000; /* Zet de kleur van de subtitel naar donkerrood */
+    font-size: 20px; /* Zet de fontgrootte van de subtitel naar 20px */
+}
+
+article > h5 {
+    color: #a00c2a; /* Zet de kleur van de tussenkopjes naar een dieprode tint */
+    font-size: 19px; /* Zet de fontgrootte van de tussenkopjes naar 19px */
+}
+
+article > p {
+    font-size: 50%; /* Zet de fontgrootte van de paragraaf naar 50% van de standaardgrootte */
+    color: #a00c2a; /* Zet de kleur van de paragrafen naar de dieprode tint */
+}
+
+/* ------------------------ TABLE (Tabel) ------------------------ */
+/* Tabel Stijlen */
+article > table {
+    font-size: 10px; /* Zet de fontgrootte van de tabel naar 10px */
+    border: 1px solid deeppink; /* Zet een rand van deeppink rond de tabel */
+}
+
+/* Tabel kopjes */
+th {
+    background-color: #e9cda0; /* Zet een lichtbruine achtergrond voor de tabelkoppen */
+    color: black; /* Zet de tekstkleur van de tabelkoppen naar zwart */
+    border-bottom: 1px solid deeppink; /* Zet een rand onder de tabelkoppen */
+    text-align: center; /* Center de tekst in de tabelkoppen */
+    padding: 0.5em 1em 0.5em 1em; /* Voeg padding toe aan de tabelkoppen */
+    border-left: 1px dotted deeppink; /* Zet een gestippelde rand aan de linkerzijde van de koppen */
+}
+
+/* Tabel data */
+td {
+    width: 50%; /* Zet de breedte van de tabeldata naar 50% */
+    padding: 0.5em 1em 0.5em 1em; /* Voeg padding toe aan de tabeldata */
+    text-align: center; /* Center de tekst in de cellen */
+    border-bottom: 1px solid deeppink; /* Zet een rand onder de cellen */
+}
+
+/* Hover effect voor tabelrijen */
+table tr:hover {
+    background-color: #ce0000; /* Verander de achtergrondkleur van een rij bij hover naar donkerrood */
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+/* Footer Stijlen */
+footer {
+    margin-top: 50px; /* Voeg een marge van 50px toe boven de footer */
+    background-color: #CE0000; /* Zet de achtergrondkleur van de footer naar donkerrood */
+    height: 200px; /* Zet de hoogte van de footer naar 200px */
+    color: white; /* Zet de tekstkleur in de footer naar wit */
+    font-size: 10px; /* Zet de fontgrootte in de footer naar 10px */
+}
+
+/* Footer Kolommen */
+footer .footerKolom1, .footerKolom2, .footerKolom3 {
+    float: left; /* Laat de footerkolommen aan de linkerkant zweven */
+    width: 33%; /* Zet de breedte van elke kolom in de footer naar 33% */
+}
+
+/* Footer Lijsten */
+footer ul {
+    list-style-type: none; /* Verwijder opsommingstekens uit de lijst */
+    padding-left: 5%; /* Zet padding aan de linkerzijde van de lijst */
+}
+
+/* Footer Lijst Items */
+footer ul li {
+    color: white; /* Zet de tekstkleur van de lijstitems naar wit */
+    font-size: 16px; /* Zet de fontgrootte van de lijstitems naar 16px */
+}
+
+/* Footer Copyright */
+footer .copyright {
+    position: relative; /* Zet de positie van de copyrighttekst relatief */
+    margin-top: 50px; /* Voeg een marge van 50px boven de copyrighttekst toe */
+    text-align: center; /* Center de tekst */
+}
+
+/* ------------------------ GALLERY ------------------------ */
+
+/* Galerie Sectie */
+.gallerij {
+    display: grid; /* Gebruik grid-layout voor de galerij */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Maak vijf gelijke kolommen */
+    gap: 20px; /* Zet een ruimte van 20px tussen de afbeeldingen */
+    margin-top: 30px; /* Voeg een marge van 30px boven de galerij toe */
+}
+
+/* Galerie Afbeeldingen */
+.gallerij div img {
+    width: 100%; /* Maak de afbeeldingen 100% breed van hun container */
+    height: auto; /* Zorg ervoor dat de hoogte automatisch wordt aangepast */
+}

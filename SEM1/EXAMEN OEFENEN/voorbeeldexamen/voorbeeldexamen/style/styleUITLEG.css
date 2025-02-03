@@ -1,0 +1,268 @@
+/*--------------------------------------------------------------
+    ALGEMEEN
+--------------------------------------------------------------*/
+
+/* Verwijdert marges van alle elementen */
+* {
+    margin: 0;
+}
+
+/* Zet het lettertype voor de body naar Helvetica, sans-serif */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Maakt de tekst in h1 hoofdlettergebruik, vergroot de lettergrootte en voegt een onderstreping toe zonder lijn onder de tekst */
+h1 {
+    text-transform: uppercase; /* Maakt de tekst hoofdletters */
+    font-size: 2.5em; /* Vergroot de lettergrootte */
+    border-bottom: 2px solid black; /* Voeg een zwarte lijn onder de tekst */
+    color: black; /* Tekstkleur wordt zwart */
+    margin-bottom: 1em; /* Voegt ruimte toe onder h1 */
+}
+
+/* Vergroot de lettergrootte van h2 en voegt marge onderaan toe */
+h2 {
+    font-size: 1.5em; /* Vergroot de lettergrootte */
+    margin-bottom: 1em; /* Ruimte onder h2 */
+}
+
+/* Zorgt ervoor dat afbeeldingen zich aanpassen aan de breedte van de container */
+.respimg {
+    width: 100%; /* Maak de afbeelding 100% van de container breed */
+    height: auto; /* Zorgt ervoor dat de hoogte zich proportioneel aanpast */
+    display: block; /* Zorgt ervoor dat de afbeelding als block-element wordt weergegeven */
+}
+
+/*--------------------------------------------------------------
+    HEADER
+--------------------------------------------------------------*/
+
+/* Voeg een lichte onderrand toe aan de header */
+#topHeader {
+    border-bottom: 1px solid #ebe8e8; /* Voeg een lichte rand toe onder de header */
+}
+
+/* Beperk de breedte van de container en centreer deze */
+#topHeaderContainer {
+    width: 600px; /* Stel de breedte van de container in */
+    margin: 0 auto; /* Centreer de container horizontaal */
+}
+
+/* Verklein de hoogte van de headerafbeelding */
+#topHeaderContainer > img {
+    height: 50px; /* Stel de hoogte van de afbeelding in */
+}
+
+/*--------------------------------------------------------------
+    NAVIGATION
+--------------------------------------------------------------*/
+
+/* Definieer de breedte van de navigatiebalk en centreer deze */
+nav {
+    width: 600px; /* Stel de breedte van de navigatie in */
+    margin: 10px auto; /* Centreer de navigatiebalk */
+}
+
+/* Maak de navigatielijst een grid met 7 kolommen */
+nav > ul {
+    list-style: none; /* Verwijder opsommingstekens */
+    display: grid; /* Maak de lijst een grid */
+    grid-template-columns: repeat(7, 1fr); /* Verdeel de lijst in 7 gelijke kolommen */
+}
+
+/* Stijl voor de lijstitems in de navigatie: centreren, randen en padding */
+nav > ul > li {
+    text-align: center; /* Centreer de tekst */
+    margin: 10px 0; /* Voeg verticale marge toe */
+    border-right: #ebe8e8 solid 1px; /* Voeg een lichte rand rechts toe */
+    box-sizing: border-box; /* Houd de breedte van het element consistent */
+    padding-bottom: 2px; /* Voeg padding toe aan de onderkant van het element */
+}
+
+/* Stijl voor het hover-effect: onderstreping en verwijderen van padding onderaan */
+nav > ul > li:hover {
+    border-bottom: #fff100 solid 2px; /* Voeg een gele onderstreping toe bij hover */
+    padding-bottom: 0; /* Verwijder de padding bij hover */
+}
+
+/* Stijl voor de links in de navigatiebalk: geen onderstreping, hoofdletters, en een kleur */
+nav > ul > li > a {
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    text-transform: uppercase; /* Zet de tekst om naar hoofdletters */
+    color: #5b4746; /* Zet de tekstkleur naar een donkerbruine kleur */
+    font-size: 0.8125em; /* Stel de lettergrootte in */
+}
+
+/* Verwijder de rechterrand van het laatste lijstitem */
+nav > ul > li:last-of-type {
+    border-right: none; /* Verwijder de rechterrand van het laatste item */
+}
+
+/*--------------------------------------------------------------
+    MAIN
+--------------------------------------------------------------*/
+
+/* Voeg een bovenrand toe aan het hoofdgedeelte */
+main {
+    border-top: solid 1px #ebe8e8; /* Voeg een rand boven het main-gedeelte toe */
+}
+
+/*--------------------------------------------------------------
+    MAIN - HEADER
+--------------------------------------------------------------*/
+
+/* Stel de achtergrond van de header in en centreer de tekst */
+main > header {
+    height: 500px; /* Stel de hoogte van de header in */
+    background-image: url("../images/headerimage.jpg"); /* Zet de achtergrondafbeelding */
+    background-size: cover; /* Zorg ervoor dat de afbeelding de volledige header bedekt */
+    background-position: center; /* Centreer de achtergrondafbeelding */
+    display: flex; /* Gebruik flexbox om de inhoud te centreren */
+    justify-content: center; /* Centreer de inhoud horizontaal */
+    align-items: center; /* Centreer de inhoud verticaal */
+}
+
+/* Verander de stijl van h1 in de header: wit, geen onderstreping, en met schaduw */
+main > header > h1 {
+    color: white; /* Zet de tekstkleur naar wit */
+    border-bottom: none; /* Verwijder de onderste rand */
+    text-transform: none; /* Zet de tekst niet om naar hoofdletters */
+    font-size: 2.5em; /* Zet de lettergrootte */
+    font-weight: normal; /* Zet het fontgewicht naar normaal */
+    text-shadow: #8d99ae 2px 2px; /* Voeg een schaduw toe aan de tekst */
+    margin-bottom: 0; /* Verwijder de marge onderaan */
+}
+
+/*--------------------------------------------------------------
+    MAIN - RECIPES
+--------------------------------------------------------------*/
+
+/* Voeg marge en breedte toe aan het receptenblok */
+#recipes {
+    margin: 50px auto; /* Zet marge boven en onder, en centreer het blok */
+    width: 600px; /* Stel de breedte in */
+}
+
+/* Maak een grid voor de receptencontainer met 2 kolommen */
+#recipeContainer {
+    display: grid; /* Maak een grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Verdeel in 2 gelijke kolommen */
+    gap: 15px; /* Zet de ruimte tussen de kolommen */
+}
+
+/* Stijl voor de artikelen in de receptencontainer: marges en padding */
+#recipeContainer > article {
+    margin-right: 1.5em; /* Voeg marge toe aan de rechterkant */
+    padding-top: 1em; /* Voeg padding toe aan de bovenkant */
+    border-top: 1px solid #ebe8e8; /* Voeg een bovenrand toe */
+}
+
+/* Stijlen voor de "kicker" tekst in recepten: hoofdlettergebruik, kleur, en letterspatiëring */
+#recipeContainer .kicker {
+    text-transform: uppercase; /* Zet de tekst om naar hoofdletters */
+    padding-bottom: 0.9em; /* Voeg ruimte onder de kicker toe */
+    font-size: 0.9em; /* Zet de lettergrootte kleiner */
+    letter-spacing: 1px; /* Voeg wat ruimte tussen de letters toe */
+    color: #ff4d56; /* Zet de kleur naar roodachtig */
+}
+
+/* Stijlen voor de links in de recepten titel: geen onderstreping en zwarte kleur */
+#recipeContainer > article > header > h2 > a {
+    text-decoration: none; /* Verwijder de onderstreping van de link */
+    color: black; /* Zet de tekstkleur naar zwart */
+}
+
+/* Stijlen voor de tekst in het recept: kleur en regelhoogte */
+#recipeContainer .recipeText {
+    color: #666; /* Zet de kleur van de tekst naar grijs */
+    line-height: 2; /* Zet de regelhoogte in */
+    padding-bottom: 1em; /* Voeg ruimte onder de tekst toe */
+}
+
+/* Stijlen voor de auteur in de receptfooter: rechts uitlijnen en cursief */
+#recipeContainer > article > footer > .author {
+    padding-right: 10px; /* Voeg padding toe aan de rechterkant */
+    border-right: 1px solid #ebe8e8; /* Voeg een rechte rand rechts toe */
+    font-style: italic; /* Zet de tekst in cursief */
+    display: inline; /* Zet het element inline */
+}
+
+/* Stijlen voor de tijd in de receptfooter: padding en kleur */
+#recipeContainer > article > footer > time {
+    padding-left: 10px; /* Voeg padding toe aan de linkerkant */
+    color: #666; /* Zet de kleur van de tekst naar grijs */
+}
+
+/*--------------------------------------------------------------
+    MAIN - RECOMMENDED (non bootstrap part)
+--------------------------------------------------------------*/
+
+/* Instellingen voor aanbevolen recepten: marges en breedte */
+#recommended {
+    margin: 50px auto; /* Zet marge boven en onder, en centreer het blok */
+    width: 600px; /* Stel de breedte in */
+    --bs-gutter-x: 0; /* Zet de horizontale tussenruimte naar 0 */
+    --bs-gutter-y: 0; /* Zet de verticale tussenruimte naar 0 */
+}
+
+/* Stijlen voor afbeeldingen in de aanbevolen sectie */
+#recommended > .container img {
+    margin-bottom: 25px; /* Voeg ruimte toe onder de afbeelding */
+}
+
+/*--------------------------------------------------------------
+    FOOTER
+--------------------------------------------------------------*/
+
+/* Voeg een bovenrand toe aan de footer */
+footer#footer {
+    border-top: solid 1px #ebe8e8; /* Voeg een bovenrand toe aan de footer */
+}
+
+/* Stijlen voor div's binnen de footer: breedte en padding */
+footer#footer > div {
+    width: 50%; /* Stel de breedte van de div's in */
+    line-height: 2em; /* Zet de regelhoogte */
+    padding: 20px; /* Voeg padding toe aan de div's */
+    box-sizing: border-box; /* Zorg ervoor dat de padding het element niet vergroot */
+}
+
+/* Stijlen voor de linkerzijde van de footer */
+footer#footer > #left {
+    float: left; /* Zet het naar links */
+    text-align: right; /* Uitlijnen naar rechts */
+}
+
+/* Stijlen voor de rechterzijde van de footer */
+footer#footer > #right {
+    float: right; /* Zet het naar rechts */
+    text-align: left; /* Uitlijnen naar links */
+    background-color: black; /* Zet de achtergrondkleur naar zwart */
+    color: white; /* Zet de tekstkleur naar wit */
+}
+
+/*--------------------------------------------------------------
+    RESPONSIVE
+--------------------------------------------------------------*/
+
+/* Verandert de breedte van elementen bij grotere schermen (min-width: 770px) */
+@media screen and (min-width: 770px) {
+    #topHeaderContainer, nav, #recipes, #recommended {
+        width: 750px; /* Zet de breedte naar 750px */
+    }
+}
+
+/* Verandert de breedte van elementen bij nog grotere schermen (min-width: 1000px) */
+@media screen and (min-width: 1000px) {
+    #topHeaderContainer, nav, #recipes, #recommended {
+        width: 980px; /* Zet de breedte naar 980px */
+    }
+}
+
+/* Verandert de lettergrootte van h1 bij grotere schermen (min-width: 800px) */
+@media screen and (min-width: 800px) {
+    main > header > h1 {
+        font-size: 5em; /* Vergroot de lettergrootte van h1 */
+    }
+}
