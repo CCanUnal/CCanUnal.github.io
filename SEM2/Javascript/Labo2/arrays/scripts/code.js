@@ -3,9 +3,10 @@ const setup = () => {
     console.log(familieleden.length);
     console.log(familieleden[0], familieleden[2], familieleden[4]);
     console.log(familieleden);
+    voegNaamToe();
 }
 const voegNaamToe = (familieleden) => {
-    let naam = prompt("Voeg een extra naam toe")
+    let naam= prompt("Voeg een extra naam toe")
     familieleden.push(naam);
 }
 window.addEventListener("load", setup);

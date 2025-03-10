@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styles/style.css">
+ <title>Opdracht invulformulier</title>
+</head>
+<body>
+<form action="" method="post">
+ <fieldset>
+  <legend>Personal Information</legend>
+  <p>Which sport do you train?</p>
+  <p>First name*: <input type="text" id="firstName" name="firstName" placeholder="Your first name" required autofocus></p>
+  <p>Last name*: <input type="text" id="lastName" name="lastName" placeholder="Your last name" required></p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Sports</legend>
+  <p><input type="checkbox" id="running" name="running"> Running</p>
+  <p><input type="checkbox" id="swimming" name="swimming"> Swimming</p>
+  <p><input type="checkbox" id="rowing" name="rowing"> Rowing</p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Gender</legend>
+  <p><input type="radio" id="male" name="gender"> Male</p>
+  <p><input type="radio" id="female" name="gender"> Female</p>
+  <p><input type="radio" id="other" name="gender"> Other/Prefer not to say</p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Favorites</legend>
+  <p>First movie: <input type="text" id="movie" name="movie"></p>
+  <p>Favorite quote: <input type="text" id="quote" name="quote" placeholder="Write your favorite quote"></p>
+  <p>Favorite food:
+   <select id="favoriteFood" name="foods">
+    <option value="hamburger" name="hamburger">Hamburger</option>
+    <option value="hot dog" name="hotDog">Hot Dog</option>
+    <option value="pizza" name="pizza">Pizza</option>
+   </select>
+  </p>
+  <p>Choose a flavor: <input type="text" id="flavour" name="flavour"></p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Security & Contact</legend>
+  <p>Password*: <input type="password" id="password" name="password" required></p>
+  <p>Email address*: <input type="email" id="email" name="email" required></p>
+  <p>Favorite site: <input type="url" id="favoriteSite" name="favoriteSite"></p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Additional Information</legend>
+  <p>Favorite number (1-10): <input type="number" min="1" max="10" id="favoriteNumberN" name="favoriteNumberN"></p>
+  <p>Favorite number (11-1000): <input type="range" min="10" max="1000" id="favoriteNumberR" name="favoriteNumberR"></p>
+  <p>When were you born: <input type="date" id="birthDate" name="birthDate"></p>
+  <p>Belgium zip-code reg number*: <input type="text" minlength="4" size="4" maxlength="4" id="postCode" name="postCode" placeholder="9999" required></p>
+ </fieldset>
+
+ <fieldset>
+  <legend>Miscellaneous</legend>
+  <p>Search for something: <input type="search" id="search" name="search"></p>
+  <p>What is your favorite color? <input type="color" id="color" name="color"></p>
+  <p>Upload a file: <input type="file" id="file" name="file"></p>
+ </fieldset>
+ <button>Submit</button>
+</form>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

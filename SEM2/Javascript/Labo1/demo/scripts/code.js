@@ -5,6 +5,8 @@ const setup = () => {
     let btnSend = document.getElementById("btnSend");
     btnSend.addEventListener("click", show);
 }
+
+
 const change = () =>
 {
  let lblCursus = document.getElementById('lblCursus');
@@ -12,6 +14,8 @@ const change = () =>
 
 
 }
+
+
 const show = () =>
 {
     let txtName = document.getElementById("txtName");
