@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+#title{
+    margin-right: 5px;
+}
+#beschrijving{
+    margin-right: 5px;
+}
+.items{
+    height: 15%;
+    border-radius: 10px;
+    background-color: orange;
+    width: 15%;
+}
+.header{
+    padding: 5px;
+    margin-bottom: 2%;
+}
+.board {
+    display: flex;
+    gap: 20px;
+    /*background-color: blue;*/
+}
+.column {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 300px;
+}
+.task {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+.task.dragging {
+    opacity: 0.5;
+}
+
+
+
