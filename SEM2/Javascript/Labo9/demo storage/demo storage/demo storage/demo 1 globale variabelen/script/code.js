@@ -8,6 +8,7 @@ const setup =() => {
 const verhoog =() => {
 	let txtResult=document.getElementById("txtResult");
 	teller++;
+	console.log(teller)
 	txtResult.innerHTML="De waarde van de teller is " + teller;
 };
 
